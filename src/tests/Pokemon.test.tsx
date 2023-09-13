@@ -1,9 +1,9 @@
 import { fireEvent, screen } from '@testing-library/react';
-import userEvent from '@testing-library/user-event';
 import renderWithRouter from '../renderWithRouter';
 import App from '../App';
 
 const poke25 = '/pokemon/25';
+const nameBt = 'More details';
 
 test('O nome correto do Pokémon deve ser mostrado na tela.', () => {
   renderWithRouter(<App />);
@@ -72,4 +72,20 @@ test('Existe um elemento <p> com a descrição na página /pokemon/4', () => {
   const descriptionElement = screen.getByText(descriptionText);
 
   expect(descriptionElement).toBeInTheDocument();
+});
+
+test('Testa se tem um icone de estrela nos pokemons favoritados', async () => {
+  const { user } = renderWithRouter(<App />);
+
+  const linkDetalhes = screen.getByRole('link', { name: `${nameBt}` });
+
+  await user.click(linkDetalhes);
+
+  const checkBoxFavorite = screen.getByRole('checkbox', { name: 'Pokémon favoritado?' });
+
+  await user.click(checkBoxFavorite);
+
+  const imgFavorite = screen.getByAltText('Pikachu is marked as favorite');
+
+  expect(imgFavorite).toBeInTheDocument();
 });
