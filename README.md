@@ -23,10 +23,6 @@ Durante o desenvolvimento deste projeto, aprendi várias habilidades e conceitos
 - **Testes de Navegação:** Implementei testes para verificar a navegação entre as páginas da aplicação.
 - **Testes de Integração:** Compreendi como testar a interação entre diferentes componentes da aplicação.
   
-<p>
-<img src="https://3.bp.blogspot.com/-X9hsxdD2qfc/WQdACvQYaeI/AAAAAAAAFp4/vhr4Qbz9FdscwvszKsKFvsSyP37mAq10QCLcB/s1600/Pokedex_Butterfree.gif" alt="Pokédex Butterfree" width="300" style="margin: 50px;">
-</p>
-
 ## Executando os Testes
 
 Para executar os testes automatizados localmente, siga estas etapas:
@@ -53,4 +49,7 @@ Para executar os testes automatizados localmente, siga estas etapas:
 
 ---
 
-Obrigado por visitar meu projeto! Se tiver alguma dúvida ou sugestão, não hesite em entrar em contato.
+<div align="center">
+  <h4>Obrigado por visitar meu projeto! Se tiver alguma dúvida ou sugestão, não hesite em entrar em contato.</h4>
+  <img src="https://3.bp.blogspot.com/-X9hsxdD2qfc/WQdACvQYaeI/AAAAAAAAFp4/vhr4Qbz9FdscwvszKsKFvsSyP37mAq10QCLcB/s1600/Pokedex_Butterfree.gif" width="400";">
+</div>
